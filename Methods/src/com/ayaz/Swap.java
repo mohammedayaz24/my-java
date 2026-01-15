@@ -12,6 +12,7 @@ public class Swap {
         int temp = a;
         a = b;
         b = temp;
+    //This change will be only be valid in this function scope only
     }
 
 }
