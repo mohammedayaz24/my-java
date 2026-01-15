@@ -7,7 +7,7 @@ public class Main{
         String fruit = input.next();
 
         if(fruit.equals("mango")){
-            System.out.println("KIng of fruit");
+            System.out.println("KIng of fruits");
         }
     }
 
