@@ -10,7 +10,7 @@ public class Question {
 
 
     }
-    static boolean isPrime(int n){
+    public static boolean isPrime(int n){
         if(n<=1){
             return false;
         }
@@ -27,5 +27,7 @@ public class Question {
         return false;
 
     }
+
+    //q5 : to check a number is prime or not
 
 }
