@@ -23,6 +23,11 @@ public class ArrayListExample {
 
         list.remove(2);
 
+
+
+
+
+
         System.out.println(list);
         System.out.println();
 

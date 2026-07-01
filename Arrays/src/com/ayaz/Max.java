@@ -1,7 +1,6 @@
 package com.ayaz;
 
 import java.lang.reflect.Array;
-
 public class Max {
     public static void main(String[] args) {
         int[] num = { 10 , 20 , 7, 56 , 2};
