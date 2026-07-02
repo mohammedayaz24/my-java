@@ -20,7 +20,6 @@ public class linear {
             if(element == target){
                 return i;
             }
-
         }
         //this line will execute if none of the above satement above has not executed.
         //hence target not found
