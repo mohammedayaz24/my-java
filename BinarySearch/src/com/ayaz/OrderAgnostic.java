@@ -6,9 +6,9 @@ public class OrderAgnostic {
         int target = 2;
         int ans = orderAgnosticBS(arr,target);
         System.out.println(target +" is present at index:" +ans);
-
-
     }
+
+
     public static int orderAgnosticBS(int[] arr,int target){
         int start = 0;
         int end = arr.length-1;
@@ -19,7 +19,6 @@ public class OrderAgnostic {
         while(start <= end) {
             //find the middle element
             int mid = (start + (end - start) / 2);
-
             if (arr[mid] == target) {
                 return mid;
             }
