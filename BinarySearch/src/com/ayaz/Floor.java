@@ -3,11 +3,16 @@ package com.ayaz;
 public class Floor {
     public static void main(String[] args) {
         int[] arr = {2,4,6,9,11,12,14,20,36,48};
-        int target = 37;
-        int ans = search(arr,target);
+        int target = 1;
+        int ans = floor(arr,target);
         System.out.println("The floor number is :" +ans);
     }
-    public static int search(int[] arr, int target) {
+
+    //find the largest number <= target
+    public static int floor(int[] arr, int target) {
+        if(target < arr[0]){
+            return -1;
+        }
         int start = 0;
         int end = arr.length - 1;
         int mid = 0;
