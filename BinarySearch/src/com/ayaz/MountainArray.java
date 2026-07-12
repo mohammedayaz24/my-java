@@ -1,5 +1,7 @@
 package com.ayaz;
-
+//same answer
+//easy -
+//medium -
 public class MountainArray {
     public static void main(String[] args) {
         int[] arr = {0,1,0};
