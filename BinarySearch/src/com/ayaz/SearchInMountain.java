@@ -1,12 +1,11 @@
 package com.ayaz;
-//https://leetcode.com/problems/find-in-mountain-array/description/
+//https://leetcode.com/problems/find-in-mountain-array/description/fi
 public class SearchInMountain {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,3,2};
         int target = 3;
         int ans = search(arr,target);
         System.out.println("The element:"+target+":is found at:"+ans);
-
     }
 
     public static int search(int[] arr, int target) {
@@ -17,7 +16,6 @@ public class SearchInMountain {
         }
         //try to search in second half
         return orderAgnosticBS(arr,target,peak+1,arr.length -1);
-
     }
 
     public static int peakIndexMountainArray(int[] arr){
@@ -64,7 +62,6 @@ public class SearchInMountain {
         }
         return -1;
     }
-
 }
 
 
