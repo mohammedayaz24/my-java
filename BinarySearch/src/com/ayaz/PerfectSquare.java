@@ -1,5 +1,5 @@
 package com.ayaz;
-
+//https://leetcode.com/problems/valid-perfect-square/description/
 public class PerfectSquare {
     public static void main(String[] args) {
         int num = 69;
