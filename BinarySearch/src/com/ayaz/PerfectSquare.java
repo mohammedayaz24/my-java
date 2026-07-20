@@ -1,18 +1,14 @@
 package com.ayaz;
 
-import java.net.StandardSocketOptions;
-
-public class sqrt {
+public class PerfectSquare {
     public static void main(String[] args) {
-        int x = 8;
-        int ans = mySqrt(x);
-        System.out.println(ans);
+        int num = 69;
+        System.out.println(mySqrt(num));
 
     }
-    public static int mySqrt(int x) {
-
+    public static boolean mySqrt(int x) {
         if (x < 2) {
-            return x;
+            return false;
         }
         int start = 1;
         int end = x;
@@ -21,13 +17,13 @@ public class sqrt {
             long square = (long) mid * mid;
 
             if (square == x) {
-                return mid;
+                return true;
             } else if (square < x) {
                 start = mid + 1;
             } else {
                 end = mid - 1;
             }
         }
-        return end;
+        return false;
     }
 }
