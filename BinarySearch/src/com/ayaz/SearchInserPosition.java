@@ -3,7 +3,7 @@ package com.ayaz;
 public class SearchInserPosition {
     public static void main(String[] args) {
         int[] nums = {1,3,5,6};
-        int target = 7;
+        int target = 2;
         System.out.println(searchInsert(nums,target));
 
     }
