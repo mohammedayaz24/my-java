@@ -15,4 +15,5 @@ public class missingnum {
         long expsum = n * (n + 1)/2;
         return (int)(expsum-sum);
     }
+
 }
