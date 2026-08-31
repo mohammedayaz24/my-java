@@ -19,7 +19,7 @@ public class Bank {
         Account a1 = new Account();
         a1.name = "Mohammed Ayaz";
         a1.email = "mohammedayaz2411@gmail.com";
-        a1.setpassword("abcd");
+        a1.setpassword("abcdefghiklmno");
         System.out.println(a1.getpassword());
     }
 
