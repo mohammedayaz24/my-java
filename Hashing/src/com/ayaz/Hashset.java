@@ -27,14 +27,13 @@ public class Hashset {
             System.out.println("Does not contain");
         }
 
-
         //delete
         set.remove(1);
         if(!set.contains(1)){
             System.out.println("we deleted 1");
         }
-
         System.out.println(set);
+
 
         //size
         System.out.println("Size of set is :" + set.size());
@@ -43,7 +42,6 @@ public class Hashset {
         Iterator it = set.iterator();
 
         //hasNext(),  Next
-
         while(it.hasNext()){
             System.out.println(it.next());
         }
