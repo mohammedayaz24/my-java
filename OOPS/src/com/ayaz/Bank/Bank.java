@@ -6,21 +6,23 @@ class Account{
     protected String email;
     private String password;
 
-    public String getpassword(){
+    //getters and setters for private access modifiers
+    public String getPassword(){
         return this.password;
-    }
 
-    public void setpassword(String pass){
+    }
+    public void setPassword(String pass) {
         this.password = pass;
     }
 }
 public class Bank {
     public static void main(String[] args) {
-        Account a1 = new Account();
-        a1.name = "Mohammed Ayaz";
-        a1.email = "mohammedayaz2411@gmail.com";
-        a1.setpassword("abcdefghiklmno");
-        System.out.println(a1.getpassword());
+        Account account1 = new Account();
+        account1.name = "Ayaz";
+        account1.email="mohammedayaz2411@gmail.com";
+        account1.setPassword("abcd");
+        System.out.println(account1.getPassword());
+
     }
 
 }
