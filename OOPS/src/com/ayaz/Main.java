@@ -1,64 +1,58 @@
 package com.ayaz;
 
-import java.net.StandardSocketOptions;
-
-class Pen {
+//Class as blueprints
+class Pen{
     String color;
     String type;
 
-    public void write() {
+
+    //method
+    public void write(){
         System.out.println("Writing something");
     }
-
-    public void printinfo(){
+    //method
+    public void printColor(){
         System.out.println(this.color);
-        System.out.println(this.type);
-    }
-
-    Pen(String name,String age){
-        this.color = color;
-        this.type = type;
-
-        System.out.println();
     }
 }
 
-class Student{
-    String name;
-    int age;
+//class #2
 
-    public void printinfo(){
+class Student{
+    int age;
+    String name;
+
+    public void printInfo(){
         System.out.println(this.name);
         System.out.println(this.age);
     }
-
-    Student(){
-        System.out.println("Constructor called");
-    }
 }
-public class Main {
+
+public class Main{
     public static void main(String[] args) {
-        Pen pen1 = new Pen("blue","ball");
 
-//        pen1.color="blue";
-//        pen1.type="ball";
-        pen1.write();
+        //object1
+        Pen pen1 = new Pen();
+        pen1.type = "BallPoint";
+        pen1.color = "Blue";
 
-        //new object
+        //object 2
+        Pen pen2 = new Pen();
+        pen2.type = "BallPoint";
+        pen2.color = "Green";
 
-//        Pen pen2 = new Pen();
-//        pen2.color="red";
-//        pen2.type="ballpoint";
+//        pen1.printColor();
+//        pen2.printColor();
 
-        pen1.printinfo();
-//        pen2.printcolor();
-
-        System.out.println("---------------------------------");
         Student s1 = new Student();
-        s1.name="ayaz";
-        s1.age = 20;
+        s1.name = "Ayaz";
+        s1.age = 21;
 
-        s1.printinfo();
+        Student s2 = new Student();
+        s2.name="Ahmed";
+        s2.age = 24;
 
+        s1.printInfo();
+        s2.printInfo();
     }
 }
