@@ -9,13 +9,26 @@ class Student1{
         System.out.println(this.age);
     }
 
-    Student1(Student1 s2){
-        this.name=s2.name;
-        this.age=s2.age;
+
+    //Non parameterized constructor
+    //when a constructor is being created it will call the constructor method at first
+//    Student1(){
+//        System.out.println("Constructor called");
+//    }
+
+    //parameterized constructor
+//    Student1(String name, int age){
+//        this.name = name;
+//        this.age = age;
+//    }
+
+    //copy constructor
+    Student1(){
     }
 
-    Student1(){
-
+    Student1(Student1 s2){
+        this.name = s2.name;
+        this.age = s2.age;
     }
 }
 
@@ -27,5 +40,6 @@ public class Constructor {
 
         Student1 s2 = new Student1(s1);
         s2.printinfo();
+
     }
 }
