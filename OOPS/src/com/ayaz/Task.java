@@ -6,6 +6,12 @@ class Employee1{
     String name;
     int salary;
 
+    Employee1(int EmployeeId,String name,int salary){
+        this.EmployeeId = EmployeeId;
+        this.name=name;
+        this.salary=salary;
+    }
+
     public void EmpleyeeInfo(){
         System.out.println("Employee Id :" + "" +this.EmployeeId);
         System.out.println("Name :" + "" +this.name);
@@ -31,10 +37,7 @@ class Rectangle{
 
 public class Task {
     public static void main(String[] args) {
-        Employee1 emp1 = new Employee1();
-        emp1.name = "Mohammed Ayaz";
-        emp1.EmployeeId = 23656;
-        emp1.salary=40000;
+        Employee1 emp1 = new Employee1(23656,"Mohammed Ayaz",40000);
         emp1.EmpleyeeInfo();
 
         //Task 2

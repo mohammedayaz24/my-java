@@ -43,6 +43,5 @@ public class Task2 {
         acc1.displayBalance();
         acc1.deposit();
         acc1.withdraw();
-
     }
 }
