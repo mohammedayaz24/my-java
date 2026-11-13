@@ -55,6 +55,7 @@ class Employeee{
         System.out.println("Monthly salary: "+""+this.salary);
     }
 
+    //method 2
     public void calculateAnnualSalary(){
         double annualsalary = this.salary * 12;
         System.out.println("Annual salary: "+""+annualsalary);
