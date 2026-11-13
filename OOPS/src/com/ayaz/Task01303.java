@@ -38,7 +38,10 @@ class Book {
         System.out.println("Author: " + author);
         System.out.println("Status: " + (isIssued ? "Issued" : "Available"));
     }
+}
 
+
+public class Task01303 {
     public static void main(String[] args) {
         Book b1 = new Book("The Alchemist", "Paulo Coelho");
 
@@ -47,16 +50,5 @@ class Book {
         b1.displayStatus();
         b1.returnBook();
         b1.displayStatus();
-    }
-}
-
-
-
-
-
-public class Task01303 {
-    public static void main(String[] args) {
-        Book b1 = new Book("Java Programming", "James Gosling");
-
     }
 }
