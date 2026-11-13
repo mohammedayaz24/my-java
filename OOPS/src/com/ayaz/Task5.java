@@ -17,12 +17,7 @@ class BankAccount1 {
     }
 
     // Deposit
-    public void deposit() {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter Amount to Deposit: ");
-        double amount = sc.nextDouble();
-
+    public void deposit(double amount) {
         if (amount > 0) {
             balance = balance + amount;
             System.out.println(amount + " is credited to " + accHolder);
@@ -33,11 +28,7 @@ class BankAccount1 {
     }
 
     // Withdraw
-    public void withdraw() {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter Amount to Withdraw: ");
-        double amount = sc.nextDouble();
+    public void withdraw(double amount) {
 
         if (amount > 0 && balance >= amount) {
             balance = balance - amount;
@@ -58,8 +49,10 @@ public class Task5 {
     public static void main(String[] args) {
         BankAccount1 acc1 = new BankAccount1("Mohammed Ayaz", 1000);
         acc1.displayBalance();
-        acc1.deposit();
-        acc1.withdraw();
+        acc1.deposit(500);
+        acc1.withdraw(300);
+        acc1.withdraw(3000);
+
         acc1.displayBalance();
     }
 }
