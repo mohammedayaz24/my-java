@@ -45,5 +45,8 @@ public class Inheritance {
 
             Circle c1 = new Circle();
             c1.area(5);
+
+            Circle c2 = new Circle();
+            c1.area(10);
         }
 }
