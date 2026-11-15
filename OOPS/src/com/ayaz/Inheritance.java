@@ -33,6 +33,7 @@ class Circle extends Shape{
 
 public class Inheritance {
     public static void main(String[] args){
+        //objects
             Shape s1 = new Shape();
             s1.area();
 
