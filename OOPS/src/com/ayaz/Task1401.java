@@ -34,6 +34,9 @@ public class Task1401 {
         Person p1 = new Person("ayaz",21);
         //p1.displayPersonDetails();
 
+        Person p2 = new Person("Ahmed",22);
+
+
         Student5 s5 = new Student5("Ahmed",22,25432);
         s5.displayStudentDetails();
 
