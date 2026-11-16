@@ -9,7 +9,7 @@ class BankAccount{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Amount: ");
         double amount = sc.nextDouble();
-        if(amount > 0) {
+        if(amount >= 0) {
             balance = balance + amount;
             System.out.println(amount + " is credited to your account" + " " + this.accHolder);
             displayBalance();
