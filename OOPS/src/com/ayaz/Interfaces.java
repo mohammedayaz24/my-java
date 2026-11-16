@@ -11,15 +11,21 @@ interface Herbivorse{
     String food = "Veg";
 }
 
-class Horse1 implements Animal,Herbivorse{
+interface MakeSound{
+    boolean sound = true;
+}
+
+class Horse1 implements Animal,Herbivorse,MakeSound{
     public void walk(){
-        System.out.println("walks on 4 legs");
+        System.out.println("horse "+"walks on 4 legs "+"can make sound");
     }
 }
 
 public class Interfaces {
     public static void main(String[] args) {
         Horse1 horse = new Horse1();
+
+        horse.walk();
 
     }
 }
